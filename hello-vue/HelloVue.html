@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HelloVue</title>
+</head>
+<body>
+
+<!--vue对象的HTML模板-->
+<div id="app">
+    <!--双向绑定用v-model="数据模型"-->
+    <input type="text" v-model="year">
+    <!--<input type="button" value="+1" v-on:click="year++">-->
+    <!--v-on:事件名="js表达式（变量操作/方法名）"-->
+    <input type="button" value="+1" v-on:click="increase">
+
+    <!--{{}}：JS表达式-->
+    <h1>Hello{{name}} {{year}}年</h1>
+</div>
+
+</body>
+
+<!--错误引入-->
+<!--<script src="/node_modules/vue/dist/vue.js"/>-->
+<!--错误引入-->
+<!--<script src="/node_modules/vue/dist/vue.js"></script>-->
+<!--正确引入-->
+<script src="node_modules/vue/dist/vue.js"></script>
+
+<script>
+    
+    //初始化一个vue实例
+    const app = new Vue({
+        el: "#app",//element:选择器
+        data: {//定义数据模型
+            name: "Vue",
+            year: 2021
+        },
+        methods:{
+            increase(){
+                this.year++
+            }
+        }
+    })
+
+</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>es6-object</title>
+</head>
+<body>
+<script>
+
+    //Object扩展API
+    let personA = {
+        name:"zs",
+        age:18,
+        work:"programmer"
+    }
+    let personB = {
+        name:"lq",
+        age:28,
+        work:"magician"
+    }
+    let append = {
+        sex:"male"
+    }
+    let keys = Object.keys(personA);
+    console.log(keys)
+    let values = Object.values(personA);
+    console.log(values)
+    let entries = Object.entries(personA);
+    console.log(entries)
+    let assign = Object.assign(personA,personB,append);
+    console.log(assign)
+
+    //解构表达式
+    let {name} = personA
+    console.log(name)
+
+
+</script>
+</body>
+</html>

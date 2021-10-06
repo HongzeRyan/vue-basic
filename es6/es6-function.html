@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>es6-function</title>
+</head>
+<body>
+<script>
+
+    //函数的定义
+    function a() {
+        console.log(this)
+        console.log("function a")
+    }
+
+    let b = (a, b=100) => {
+        console.log("function b")
+        console.log(a + b)
+    }
+
+    //对象中定义函数
+    let person = {
+        name: "zs",
+        fun1: function (age) {
+            console.log(this)
+            console.log(this.name + age + "岁了！")
+        },
+        fun2: (age) => {
+            //注意：箭头函数的this代表的东西值得注意(window)
+            console.log(this)
+            console.log(window)
+            console.log(this.name + age + "岁了！")
+            console.log(person.name + age + "岁了！")
+        },
+        fun3(age) {
+            console.log(this.name + age + "岁了！")
+        }
+    }
+
+    person.fun1(18)
+    person.fun2(19)
+    person.fun3(20)
+
+    //解构表达式应用在形参列表上
+    let deconstruction = ({name})=>{console.log("我叫"+name)}
+    deconstruction(person)
+
+</script>
+</body>
+</html>

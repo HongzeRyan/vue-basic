@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>es6-array</title>
+</head>
+<body>
+<script>
+
+    //数组API扩展
+    let arr = [10,20,30,40]
+    console.log(arr)
+    arr = arr.map(a=>a+10)
+    console.log(arr)
+
+    let array = [10,20,30,40]
+    console.log(array)
+    let resultA = array.reduce((a,b)=>{a+b})
+    console.log("resultA:",resultA)
+    // resultA: undefined
+    let resultB = array.reduce((a,b)=>a+b)
+    console.log("resultB",resultB)
+    //resultB 100
+
+    let number = arr.find(x=>x>20);
+    console.log(number)
+
+    let index = arr.findIndex(x=>x>30);
+    console.log(index)
+
+    let result = arr.includes(30);
+    console.log(result)
+
+    //解构表达式
+    let [a,b,c,d] = arr
+    console.log(a)
+
+</script>
+</body>
+</html>
