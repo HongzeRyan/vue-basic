@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue-directives</title>
+</head>
+<body>
+
+<div id="app">
+
+    <!--插值表达式-->
+
+    <!--存在插值闪烁问题-->
+    <h1>你好，我是{{name}}</h1>
+
+    <!--避免插值闪烁问题-->
+    <h1>你好，我是<span v-text="name">李四</span></h1>
+    <h1>你好，我是<span v-html="html">李四</span></h1>
+
+</div>
+
+</body>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    const app = new Vue({
+        el:"#app",
+        data:{
+            name:"张三",
+            html:`<span style="color: cornflowerblue">张三的输入框<input type="text"></span>`
+        }
+    })
+</script>
+</html>

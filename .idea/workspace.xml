@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c58393d-b245-4bec-8331-47c5278fdd45" name="Default Changelist" comment="" />
+    <list default="true" id="6c58393d-b245-4bec-8331-47c5278fdd45" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hello-vue/vue-directives.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hello-vue/vue-for.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hello-vue/vue-model.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hello-vue/vue-on.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +21,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -23,6 +33,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1yzNGhgX6nmYhKY4y5UNz4E4Z2R" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -31,6 +44,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
@@ -61,6 +75,8 @@
       <workItem from="1633354984982" duration="1274000" />
       <workItem from="1633422308585" duration="3395000" />
       <workItem from="1633426326411" duration="4850000" />
+      <workItem from="1633488747662" duration="10187000" />
+      <workItem from="1633523596310" duration="2198000" />
     </task>
     <servers />
   </component>
@@ -72,6 +88,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="182" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1633426623758" />
+    <state x="564" y="114" key="CommitChangelistDialog2" timestamp="1633503169075">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="564" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1633503169075" />
     <state x="463" y="165" key="SettingsEditor" timestamp="1633426357716">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

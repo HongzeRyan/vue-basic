@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue-model</title>
+</head>
+<body>
+<div id="app">
+
+    <!--checkbox双向绑定-->
+    <input type="checkbox" value="Java" v-model="language">Java<br>
+    <input type="checkbox" value="Python" v-model="language">Python<br>
+    <input type="checkbox" value="Go" v-model="language">Go<br>
+    <hr>
+    您选择了{{language.join(",")}}作为开发语言！
+    <br><br>
+
+    <!--radio双向绑定-->
+    <input type="radio" value="男" v-model="sex">男<br>
+    <input type="radio" value="女" v-model="sex">女<br>
+    <hr>
+    您是{{sex}}生！
+    <br><br>
+
+    <!--select双向绑定-->
+    <select v-model="subject">
+        <option value="计算机科学技术">计算机科学与技术</option>
+        <option value="信息与计算科学">信息与计算科学</option>
+        <option value="物联网工程">物联网工程</option>
+        <option value="信息与计算科学">信息与计算科学</option>
+    </select>
+    <hr>
+    您选择{{subject}}作为您的专业！
+
+</div>
+</body>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    const app = new Vue({
+        el:"#app",
+        data:{
+            language:[],
+            sex:"",
+            subject:""
+        }
+    })
+</script>
+</html>
